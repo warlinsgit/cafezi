@@ -14,7 +14,7 @@ const poll = require('./routes/poll');
 //set public folder
 
 
-app.use('/', express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'hbs');
 //body parser middleware
 
@@ -30,9 +30,9 @@ app.use('/poll', poll);
 //const port = 3000;
 //var port = process.env.PORT || 5000;
 
-var server = app.listen(process.env.PORT || 5000), function() {
-       var port = server.address().port;
-       console.log("Express is working on port " + port);
+var server = app.listen(process.env.PORT || 5000, function () {
+  var port = server.address().port;
+  console.log("Express is working on port " + port);
 });
 
 //app.listen(port, () => console.log('Server started on port ${port}'));
