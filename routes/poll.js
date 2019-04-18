@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const mongoose = require("mongoose");
-const Vote = require('../models/vote');
+const Vote = require('./models/vote');
 const Pusher = require('pusher');
 
 var pusher = new Pusher({
