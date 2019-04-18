@@ -38,7 +38,7 @@ app.get('/poll', function(req, res) {
 //const port = 3000;
 //var port = process.env.PORT || 5000;
 
-var server = app.listen(process.env.PORT || 5000, function () {
+var server = app.listen(process.env.PORT || 3000, function () {
   var port = server.address().port;
   console.log("Express is working on port " + port);
 });
