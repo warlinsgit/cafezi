@@ -6,6 +6,9 @@ const cors = require('cors'); // let a user agent gain permission to access sele
 //db config
 require('./config/db');
 
+var http = require('http');
+var server = http.Server(app);
+
 
 const app = express();
 const poll = require('./routes/poll');
@@ -26,7 +29,7 @@ app.use(cors());
 app.use('/poll', poll);
 
 //const port = 3000;
-app.set('port', (process.env.PORT || 5000));
+var port = process.env.PORT || 5000;
 
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
