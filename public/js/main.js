@@ -4,7 +4,8 @@ form.addEventListener('submit', e => {
   const choice = document.querySelector('input[name=cafe]:checked').value;
   const data = {cafe: choice};
 
-  fetch('http://localhost:3000/poll', {
+//  fetch('http://localhost:3000/poll', {
+    fetch('https://gentle-springs-57466.herokuapp.com/poll', {
     method: 'post',
     body: JSON.stringify(data),
     headers: new Headers ({
