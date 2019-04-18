@@ -14,7 +14,7 @@ const poll = require('./routes/poll');
 //set public folder
 
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use('/', express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'hbs');
 //body parser middleware
 
