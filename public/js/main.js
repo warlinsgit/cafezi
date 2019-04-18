@@ -21,7 +21,8 @@ form.addEventListener('submit', e => {
   e.preventDefault();
 });
 
-fetch("http://localhost:3000/poll")
+//fetch("http://localhost:3000/poll")
+fetch("https://gentle-springs-57466.herokuapp.com/poll")
 .then(res => res.json())
 .then(data => {
 
