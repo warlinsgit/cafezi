@@ -6,8 +6,7 @@ const cors = require('cors'); // let a user agent gain permission to access sele
 //db config
 require('./config/db');
 
-var http = require('http');
-var server = http.Server(app);
+
 
 
 const app = express();
