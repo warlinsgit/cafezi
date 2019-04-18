@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css?family=Tajawal');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/*
+.yourElement {
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+*/
+
+
+
+
+
+
+body{
+  background:
+        /* top, transparent   background: #1a1a1a; black, faked with gradient */
+        linear-gradient(
+          rgba(26, 26, 26, 0.5),
+          rgba(26, 26, 26, 0.5)
+        ),
+        /* bottom, image */
+        url('../images/coffee-beans.jpg')no-repeat center center fixed; ;
+    }
+
+section.vote-forma{
+    /*  background: #1a1a1a; */
+     background-color:rgba(21, 12, 0, 0.74);
+       padding: 0 30px 90px;
+}
+form#vote-form{
+    margin-left: -100px;
+     margin-top: -15px;
+}
+
+
+
+h1.header1 {
+	color: #F4E8DA;
+	font-family: "Lato", sans-serif;
+	border-bottom: 1px solid #E65634;
+
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 40px;
+	margin: 0 auto 12px;
+	max-width: 600px;
+	padding-top: 30px;
+  padding-bottom: 20px;
+	text-align: center;
+}
+
+h1.header3 {
+	color: #F4E8DA;
+	font-family: "Lato", sans-serif;
+	border-bottom: 1px solid #E65634;
+
+	font-size: 28px;
+	font-weight: 400;
+	line-height: 40px;
+	margin: 0 auto 12px;
+	max-width: 600px;
+	padding-top: 90px;
+  padding-bottom: 10px;
+	text-align: center;
+}
+
+p.header2 {
+	color: #DAB7A3;
+	font-family: 'Lato';
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 36px;
+	margin: 0 auto 36px;
+	max-width: 400px;
+  padding-bottom: 90px;
+}
+p.header4 {
+	color: #DAB7A3;
+	font-family: 'Lato';
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 36px;
+	margin: 0 auto 36px;
+	max-width: 400px;
+  padding-bottom: 50px;
+}
+
+a {
+	color: #E65634;
+}
+
+a:hover {
+	color: #fff;
+}
+
+
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container-video {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.w-100{
+  margin-top: 45%;
+}
+h1.display-3{
+  font-family: "Lato", sans-serif;
+    color: #F4E8DA;
+    font-size: 40px;
+
+}
+.lead{
+  color: #F4E8DA;
+
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+
+
+/* coffee poll */
+
+
+.row {
+    text-align: center;
+}
+.col-md-6 {
+    display:inline-block;
+    padding: 20px;
+
+}
+
+
+input[type="radio"]  {
+
+  margin-left: 50px;
+  padding: 23px;
+  font-size: 35px;
+   margin-top: 13px;
+
+
+}
+label.cafe-type{
+
+    position:absolute;
+    padding: 23px;
+
+
+}
+p.form-submit{
+  margin-left: 26%;
+  margin-top: 29px;
+}
+
+p.cafe-type, label.cafe-type{
+
+  color: #F4E8DA;
+  font-size: 19px;
+  letter-spacing: 3px;
+  margin-top: -15px;
+  padding: 22px;
+
+}
+
+
+@media only screen and (max-width: 736px) {
+h1.text-info{
+  font-size: 38px;
+  font-weight: 600;
+}
+div > .col-md-4 {
+  padding-right: 50%;
+    margin-top: -75px;
+   }
+   p.form-1{
+
+  margin-right: 10%;
+   }
+
+   label.cafe-type{
+
+ position: absolute;
+
+   }
+
+  h1.cafe-type, label.cafe-type{
+
+    color: #F4E8DA;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-top: -2px;
+    padding: 12px;
+
+  }
+  .w-100{
+    margin-top: 45%;
+  }
+
+h1.header1 {
+
+
+	font-size: 35px;
+
+	padding-top: 60px;
+  padding-bottom: 10px;
+
+}
+h1.header3 {
+
+
+	font-size: 25px;
+  padding-bottom: 1px;
+
+}
+    p.header2 {
+
+	font-size: 15px;
+
+}
+p.header4 {
+
+font-size: 15px;
+
+}
+
+}
+
+/*footer */
+
+a:hover{
+    text-decoration:none;
+}
+.section-padding {
+	padding: 60px 0;
+}
+.bottom-footer {
+    background-color: #1a1a1a;
+}
+.bottom-footer .copyright {
+    color: #e5e5e5;
+    font-weight: 600;
+}
+.copyright a {
+    color: #f2ff49;
+    margin-left: 3px;
+    padding-right: 3px;
+}
+.bottom-footer p {
+    margin-bottom: 0;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.copyright p span {
+    color: #d1caca;
+}
+.bottom-footer .copyright p, .bottom-footer .copyright a:hover{
+    color: #6c6d83;
+}
+
+/*button homepage see more */
+.orange-circle-button a {
+
+	font-size: 10px;
+
+}
+
+.orange-circle-button {
+
+	box-shadow: 2px 4px 0 2px rgba(0,0,0,0.1);
+	border: .5em solid #E84D0E;
+	font-size: 10px;
+	line-height: 16px;
+	color: #ffffff;
+	background-color: #E65634;
+	margin: auto;
+	border-radius: 50%;
+	height: 70px;
+	width: 70px;
+	position: relative;
+  top: 20px;
+}
+.orange-circle-button:hover {
+	color:#ffffff;
+    background-color: #e84d0e;
+	text-decoration: none;
+	border-color: #ff7536;
+
+}
+
+
+
+.orange-circle-button:visited {
+	color:#ffffff;
+    background-color: #e84d0e;
+	text-decoration: none;
+
+}
+.orange-circle-link-greater-than {
+    font-size: 10px;
+}
+
+
+@media only screen and (max-width: 736px) {
+    .orange-circle-button {
+
+	box-shadow: 2px 4px 0 2px rgba(0,0,0,0.1);
+	border: .1em solid #E84D0E;
+		font-size: 8px;
+	line-height: 12px;
+	color: #ffffff;
+	background-color: #E65634;
+	margin: auto;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	position: relative;
+  top: 18px;
+
+}
+
+}
+
+
+/* modal box  */
+
+.coupon {
+  border: 5px dotted #bbb;
+background: #f9f2ec;
+  border-radius: 50px;
+  margin: 0 auto;
+  width: 100%;
+
+}
+
+.container-coupon {
+  padding: 2px 16px;
+
+    background: #f1f4f1;
+}
+
+span.promo {
+  background: #ccc;
+  padding: 3px;
+  color: black;
+}
+p.cupon-info{
+  color: #504F4E;
+  font-size: 15px;
+}
+
+.expire {
+  color: red;
+}
+.bottom-strip{
+    nd:  #504F4E;
+}
+.modal-header{
+    background: #504F4E;
+
+}
+
+/****** extra *******/
+/****** contact page  *******/
+
+/* ==========================================
+   CONTACT SECTION
+   ========================================== */
+
+   .contact1{
+
+
+     border-radius:1px;
+     padding-bottom: 100px;
+     background-color:rgba(21, 12, 0, 0.74);
+
+     color: #f5f5f5;
+   }
+   .google-map {
+          margin-top: 10px;
+          padding: 20px;
+        }
+        .form-holder-address{
+          font-size: 14px;
+        }
+
+        input[type="text"]  {
+
+          margin-left: 1px;
+          padding: 5px;
+          font-size: 15px;
+
+
+
+        }
+        .form-holder{
+         padding-top: 10px;
+        }
+
+        @media (max-width: 667px) {
+
+
+         .form-holder-address{
+           padding: 30px;
+
+         }
+  }
+
+
+  /* Social Icons info/about page */
+  .about-icons {
+   margin: 10px 0px 0px 0px;
+  }
+  .about-icons i {
+    margin-right: 10px;
+    padding: 0px;
+    font-size: 35px;
+    color: #323232;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+  }
+  .about-icons li {
+    margin: 0px;
+    padding: 0;
+    display: inline-block;
+  }
+  #social-fb:hover {
+    color: #3B5998;
+    transition: all .001s;
+  }
+  #social-tw:hover {
+    color: #4099FF;
+    transition: all .001s;
+  }
+  #social-gp:hover {
+    color: #d34836;
+    transition: all .001s;
+  }
+  #social-em:hover {
+    color: #f39c12;
+    transition: all .001s;
+  }
+
+
+  @media (max-width: 667px) {
+
+  .divs-bottom{
+      position: relative;
+      padding: 50px;
+
+
+
+  }
+
+    .logo-bottom{
+        position: relative ;
+        padding-left: 10%;
+      left: 45%;
+
+    }
+  .copyright{
+position: relative ;
+
+      left: %;
+left: 50%;
+font:10px;
+
+  }
+  div.about-icons ul > li a {
+position: relative ;
+
+      display: inline;
+      width: 100%;
+     padding: 10px;
+      left: 80%;
+
+}
+
+.w-100{
+  margin-top: 99%;
+}
+}
+
+@media (max-width: 400px) {
+
+   div.about-icons ul > li a {
+position: relative ;
+
+      display: inline;
+
+
+        left: 55%;
+}
+ul > li a{
+  padding-bottom: 10px;
+}
+
+}
