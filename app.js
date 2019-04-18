@@ -15,7 +15,7 @@ const poll = require('./routes/poll');
 
 
 app.use(express.static(path.join(__dirname, 'public')));
-app.set('view engine', 'hbs');
+
 //body parser middleware
 
 app.use(bodyParser.json());
@@ -25,14 +25,9 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 app.use(cors());
 
-//app.use('/poll', poll);
+app.use('/poll', poll);
 
-app.get('/poll', function(req, res) {
-    console.log("GET the file");
-    res
-        .status(200)
-        .sendFile(path.join(__dirname, 'app.js'));
-});
+
 
 //const port = 3000;
 //var port = process.env.PORT || 5000;
