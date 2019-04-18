@@ -27,6 +27,13 @@ app.use(cors());
 
 app.use('/poll', poll);
 
+app.get('/poll', function(req, res) {
+    console.log("GET the file");
+    res
+        .status(200)
+        .sendFile(path.join(__dirname, 'app.js'));
+});
+
 //const port = 3000;
 //var port = process.env.PORT || 5000;
 
