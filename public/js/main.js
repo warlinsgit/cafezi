@@ -5,7 +5,7 @@ form.addEventListener('submit', e => {
   const data = {cafe: choice};
 
 //  fetch('http://localhost:3000/poll', {
-    fetch('https://gentle-springs-57466.herokuapp.com:3000/poll', {
+    fetch('http://localhost:3000/poll', {
     method: 'post',
     body: JSON.stringify(data),
     headers: new Headers ({
@@ -21,7 +21,7 @@ form.addEventListener('submit', e => {
   e.preventDefault();
 });
 
-fetch("https://gentle-springs-57466.herokuapp.com:3000/poll")
+fetch("http://localhost:3000/poll")
 .then(res => res.json())
 .then(data => {
 
