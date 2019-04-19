@@ -443,7 +443,7 @@ background: linear-gradient(
 }
 
 .container-coupon {
-  padding: 2px 16px;
+  padding: 15px 16px;
  border-radius: 10px;
   background: linear-gradient(
     rgba(171, 167, 167, 0.96),
@@ -458,7 +458,7 @@ span.promo {
 
 }
 p.cupon-info{
-  color: #ffffff;
+ color: #172a14;
   font-size: 15px;
 
 
