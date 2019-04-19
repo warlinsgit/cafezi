@@ -6,9 +6,6 @@ const cors = require('cors'); // let a user agent gain permission to access sele
 //db config
 require('./config/db');
 
-
-
-
 const app = express();
 const poll = require('./routes/poll');
 //set public folder
@@ -26,7 +23,6 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(cors());
 
 app.use('/poll', poll);
-
 
 var server = app.listen(process.env.PORT || 3000, function () {
   var port = server.address().port;

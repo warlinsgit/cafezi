@@ -161,6 +161,16 @@ h1.display-3{
   }
 }
 
+@media only screen and (max-width: 736px) {
+header{
+  background-size:contain;
+
+}
+}
+
+
+
+
 
 /* coffee poll */
 
@@ -398,8 +408,11 @@ header video {
 /* modal box  */
 
 .coupon {
-  border: 5px dotted #bbb;
-background: #f9f2ec;
+  border: 5px dotted #e8e8e8;
+background: linear-gradient(
+  rgba(78, 78, 78, 0.5),
+  rgba(27, 27, 27, 0.5)
+);
   border-radius: 50px;
   margin: 0 auto;
   width: 100%;
@@ -408,30 +421,43 @@ background: #f9f2ec;
 
 .container-coupon {
   padding: 2px 16px;
-
-    background: #f1f4f1;
+ border-radius: 10px;
+  background: linear-gradient(
+    rgba(171, 167, 167, 0.96),
+    rgba(0, 0, 0, 0.5)
+  );
 }
 
 span.promo {
-  background: #ccc;
+  background: #313131;
   padding: 3px;
-  color: black;
+  color: #fff;
+
 }
 p.cupon-info{
-  color: #504F4E;
+  color: #ffffff;
   font-size: 15px;
+
+
 }
 
 .expire {
-  color: red;
+  color: #561e1e;
 }
 .bottom-strip{
-    nd:  #504F4E;
+    nd:  #e65634;
 }
 .modal-header{
-    background: #504F4E;
+    background: #060503;
+    color: #fff;
 
 }
+.voucher{
+
+    padding: 30px;
+    margin-left: 25%;
+}
+
 
 /****** extra *******/
 /****** contact page  *******/
