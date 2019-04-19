@@ -349,7 +349,7 @@ a:hover{
 	width: 70px;
 	position: relative;
   position: absolute;
- 	top: 90%;
+ 	top: 85%;
   white-space: nowrap;
     -webkit-animation: rightThenLeft 4s linear;
       left: 93%;
