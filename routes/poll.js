@@ -4,6 +4,10 @@ const mongoose = require("mongoose");
 const Vote = require('../models/Vote');
 const Pusher = require('pusher');
 
+/* global Headers */
+ /* global CanvasJS */
+  /* global Pusher */
+
 var pusher = new Pusher({
   appId: '754475',
   key: 'b9d758f152fe2b0371ba',
