@@ -1,3 +1,10 @@
+
+/* global Headers */
+ /* global CanvasJS */
+  /* global Pusher */
+   /* global fetch */
+
+
 const form = document.getElementById('vote-form');
 // Form submit event
 form.addEventListener('submit', e => {
